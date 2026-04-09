@@ -200,7 +200,7 @@ body {
     }
 
     .navigation {
-        width: 25vw;
+        width: 30vw;
     }
 
     .project-card p {
@@ -211,5 +211,9 @@ body {
     .project-card h1 {
         padding: 0 10px;
         font-size: 1.5em;
+    }
+
+    .navigation a {
+        font-size: 0.8em;
     }
 }
