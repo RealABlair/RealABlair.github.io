@@ -1,4 +1,4 @@
-:root{
+:root {
     --dark-primary: #0F0F0F;
     --dark-secondary: #1F1F1F;
     --dark-tertiary: #252525;
@@ -8,7 +8,7 @@
     --header-height: 50px;
 }
 
-body{
+body {
     margin: 0;
     background-color: var(--dark-primary);
     padding: var(--header-height) 0;
@@ -19,7 +19,7 @@ body{
     flex-direction: row;
 }
 
-.header{
+.header {
     z-index: 999;
     position: fixed;
     top: 0;
@@ -34,22 +34,22 @@ body{
     box-shadow: 0 5px 10px 2px rgb(0, 0, 0, 0.250);
 }
 
-.header .right{
+.header .right {
     float: right;
     right: 0;
     margin: 0 60px 0 auto;
 }
 
-.right a{
+.right a {
     text-decoration: none;
     color: var(--dark-text);
 }
 
-.right a:hover{
+.right a:hover {
     color: var(--dark-text-highlight);
 }
 
-.header-title{
+.header-title {
     margin: 0 20px;
     text-decoration: none;
     color: var(--dark-text);
@@ -57,7 +57,7 @@ body{
     font-weight: bolder;
 }
 
-.projects-container{
+.projects-container {
     border-radius: 20px;
     margin: 60px 30px 60px auto;
     padding: 20px 20px;
@@ -71,13 +71,13 @@ body{
     float: right;
 }
 
-.project-card{
+.project-card {
     background-color: var(--dark-secondary);
     width: 100%;
     height: 100%;
 }
 
-.project-card img{
+.project-card img {
     display: block;
     margin: 0 auto;
     max-width: 800px;
@@ -85,17 +85,17 @@ body{
     margin-bottom: 20px;
 }
 
-.project-card p{
+.project-card p {
     padding: 0 40px;
     font-size: 1.2em;
 }
 
-.project-card h1{
+.project-card h1 {
     padding: 0 40px;
     font-size: 2em;
 }
 
-.navigation{
+.navigation {
     margin: 10px 10px;
     position: fixed;
     width: 10vw;
@@ -104,22 +104,22 @@ body{
     gap: 10px;
 }
 
-.navigation a{
+.navigation a {
     text-decoration: underline;
     color: var(--dark-text);
 }
 
-.navigation a .bullet{
+.navigation a .bullet {
     margin-right: 10px;
     text-decoration: none;
     display: inline-block;
 }
 
-.navigation a:hover{
+.navigation a:hover {
     color: var(--dark-text-highlight);
 }
 
-.about-data{
+.about-data {
     background-color: var(--dark-secondary);
     width: 80vw;
     margin: 30px auto;
@@ -127,42 +127,61 @@ body{
     border-radius: 20px;
 }
 
-.about-data h1{
+.about-data h1 {
     width: 100%;
     text-align: center;
 }
 
-.about-link{
+.about-link {
     display: flex;
     gap: 10px;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.about-link img{
+.about-link img {
     width: 30px;
     height: 30px;
 }
 
-.about-link a{
+.about-link a {
     text-decoration: underline;
     color: var(--dark-text);
 }
 
-.about-link a:hover{
+.about-link a:hover {
     color: var(--dark-text-highlight);
 }
 
-.appear-animation{
+.appear-animation {
     opacity: 0;
     animation: appear 1s forwards;
 }
 
 @keyframes appear {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .projects-container {
+        width: 50vw;
+    }
+
+    .project-card img {
+        display: block;
+        margin: 0 auto;
+        max-width: 400px;
+        max-height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .navigation{
+        width: 25vw;
     }
 }
