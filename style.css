@@ -181,7 +181,35 @@ body {
         margin-bottom: 20px;
     }
 
-    .navigation{
+    .navigation {
         width: 25vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .projects-container {
+        width: 40vw;
+    }
+
+    .project-card img {
+        display: block;
+        margin: 0 auto;
+        max-width: 150px;
+        max-height: 225px;
+        margin-bottom: 20px;
+    }
+
+    .navigation {
+        width: 25vw;
+    }
+
+    .project-card p {
+        padding: 0 10px;
+        font-size: 0.8em;
+    }
+
+    .project-card h1 {
+        padding: 0 10px;
+        font-size: 1.5em;
     }
 }
